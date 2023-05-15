@@ -15,7 +15,8 @@ Overall, this data source found wastelands to be 16.96 percent of the land in In
 This mapping project uses data compiled and cleaned from the India Wasteland Atlas' 2019 report. Therefore, these maps include certain idiosyncrasies of the document, for instance in the state of Jharkhand, the 2019 Wasteland Atlas does not include data for the districts of Khunti and Ramgarh. Also, for five Indian states: Assam, Haryana, Kerala, Rajasthan, and Uttarakhand, there is only state-wide data currently available for public use. Broadly, there is no commercial shapefile (I could find) that included the exact district boundaries used in the 2019 report, where, for instance, Telangana's districts reflect the state right after independence, rather than the additional districts recognized in 2023. In order to accommodate, I created a custom shapefile, which the next section details.
 
 ## Static Maps
-![DifIndianWasteland](https://github.com/ezazy/IndiaWasteland/assets/79418915/c5d6209a-a589-426f-b626-5e652d620591)
+<img width="798" alt="Screen Shot 2023-05-15 at 9 38 14 AM" src="https://github.com/ezazy/IndiaWasteland/assets/79418915/4f4cf1fb-55ef-4ba8-9368-d05d04ceb897">
+
 
 <img width="1031" alt="Screen Shot 2023-05-15 at 9 26 47 AM" src="https://github.com/ezazy/IndiaWasteland/assets/79418915/ca0fbe66-b690-477b-99ed-db71fada2b93">
 
