@@ -1,0 +1,61 @@
+---
+title: "India Wasteland Atlas Interactive Maps"
+author: "Elizabeth Zazycki"
+date: "2023/05/09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE) 
+```
+
+
+```{r libraries, message = FALSE, echo = FALSE}
+library(shiny)
+library(sf)
+library(tidyverse)
+library(tigris)
+library(tmap)
+library(ggplot2)
+library(leaflet)
+library(dplyr)
+library(tidytext)
+
+```
+
+```{r import, message = FALSE, echo= FALSE}
+
+wastelandGeo <- st_read("/Users/elizabethzazycki/wasteland/WastelandGeo/WastelandGeo.shp")
+```
+
+
+# Interactive Wasteland Maps
+Below you will find an interactive India wasteland map that includes three separate maps: percent wasteland in 2008, percent wasteland in 2015, and the percent difference in wasteland between 2008 and 2015.
+
+```{r three interactive maps, message = FALSE, echo = FALSE, warnings = FALSE}
+wastelandGeo2 <- wastelandGeo
+wastelandGeo3 <- wastelandGeo
+
+tmap_mode("view")
+
+tm_shape(wastelandGeo, name = "Change in Wasteland") + tm_polygons(col = "perdif", n = 8, style = "quantile", 
+                                     pal = "plasma", title = "Change in Wasteland (%)", border.col = "white",
+                                     popup.vars=c("District"="District", "Wasteland Change (%)"= "perdif")) +
+  tmap_options(max.categories = 10) +
+  tm_shape(wastelandGeo2, name = "Wasteland in 2008") + tm_polygons(col = "per2008", n =8, style = "quantile", 
+                                        pal = "plasma", title = "Wasteland in 2008 (%)", border.col = "white",
+                                        popup.vars=c("District"="District", "Wasteland 2008 (%)"= "per2008")) +
+  tm_layout(main.title = "Indian Wasteland 2008-9",
+            main.title.position = "center",
+            frame = FALSE,
+            main.title.size = 1.2,
+            fontfamily = "serif") +
+  tm_shape(wastelandGeo3, name = "Wasteland in 2015") + tm_polygons(col ="per2015", n =8, style = "quantile", 
+                                        pal = "plasma", title = "Wasteland 2015 (%)", border.col = "white",
+                                        popup.vars=c("District"="District", "Wasteland in 2015 (%)"= "per2015")) +
+  tm_layout(main.title = "Indian Wasteland 2015-16",
+            main.title.position = "center",
+            frame = FALSE,
+            main.title.size = 1.2,
+            fontfamily = "serif") 
+```
