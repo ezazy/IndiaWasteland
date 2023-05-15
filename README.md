@@ -16,6 +16,8 @@ This mapping project uses data compiled and cleaned from the India Wasteland Atl
 
 ## Static Maps
 ![DifIndianWasteland](https://github.com/ezazy/IndiaWasteland/assets/79418915/c5d6209a-a589-426f-b626-5e652d620591)
-![IndiaWasteland2008](https://github.com/ezazy/IndiaWasteland/assets/79418915/1684709b-ad97-4e1f-9087-6b44796f170e)
-![IndiaWasteland2015](https://github.com/ezazy/IndiaWasteland/assets/79418915/7bdec741-c678-47dc-8293-4c0bd3c06371)
+
+<img width="1031" alt="Screen Shot 2023-05-15 at 9 26 47 AM" src="https://github.com/ezazy/IndiaWasteland/assets/79418915/ca0fbe66-b690-477b-99ed-db71fada2b93">
+
+
 
