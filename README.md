@@ -17,9 +17,7 @@ This mapping project uses data compiled and cleaned from the India Wasteland Atl
 ## Overview of Process
 In order to create a shapefile that best fit the districts and their boundaries in the 2019 wasteland report, I imported two different shapefiles, one created by Princeton and the other by Stanford (visualized below), standardized the tables in R, and used QGIS to merge the shapefiles and further edit their geometries by dissolving boundaries and renaming districts. In the combined shapefile I also used a state shapefile for the states for which there is no district information publically available. 
 
-<img width="820" alt="Shapefiles Used to Create Custom Shapefile" src="https://github.com/ezazy/IndiaWasteland/assets/79418915/d0a4415b-0dd9-4396-9198-aa95ffe3424c">
-
-<img width="783" alt="Custom Shapefile" src="https://github.com/ezazy/IndiaWasteland/assets/79418915/9680d3f2-536f-4d74-98b6-64ac000ec98c">
+<img width="1187" alt="Shapefiles Used to Create Custom Shapefile" src="https://github.com/ezazy/IndiaWasteland/assets/79418915/6d60cdae-8998-471f-bef7-64e1a741835a">
 
 <img width="783" alt="Custom Shapefile Used For Geocoding Data" src="https://github.com/ezazy/IndiaWasteland/assets/79418915/bbea6fe0-f42a-4de3-8ba3-066d6bf2eb9a">
 
