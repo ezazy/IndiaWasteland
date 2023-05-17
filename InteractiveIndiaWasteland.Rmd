@@ -24,7 +24,7 @@ library(tidytext)
 ```
 
 ```{r import, message = FALSE, echo= FALSE}
-
+## Importing Data CUSTOMIZE to your working directory
 wastelandGeo <- st_read("/Users/elizabethzazycki/wasteland/WastelandGeo/WastelandGeo.shp")
 ```
 
